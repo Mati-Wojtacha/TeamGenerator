@@ -1,2 +1,4 @@
 # TeamGenerator
 This project is a springboot backend application that allows the user to create all possible combinations of two teams with equal number of players, given a list of players.
+
+The application uses a recursive algorithm to generate all the subsets of the player list, and then filters out the ones that do not satisfy the team size constraint. The application also ensures that each player plays with and against every other player an equal number of times, by using a balanced incomplete block design (BIBD) method. The application exposes a REST API that accepts a JSON request with the player list and the team size, and returns a JSON response with the list of all possible team combinations. The application is based on the MVC design pattern and uses Spring Boot framework for creating and running the application.
